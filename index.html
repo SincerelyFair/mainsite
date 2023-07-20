@@ -11,7 +11,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       background-color: black;
       font-family: Arial, sans-serif;
       color: white;
@@ -31,10 +31,24 @@
       margin: 20px auto;
       line-height: 1.6;
     }
+
+    /* Style for the play button */
+    .play-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 24px;
+      background-color: transparent;
+      color: white;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <audio id="background-audio" autoplay loop>
+  <audio id="background-audio" loop>
     <source src="audio.mp3" type="audio/mpeg">
   </audio>
   <div class="container">
@@ -45,13 +59,15 @@
     </div>
   </div>
 
+  <button class="play-button" onclick="playAudio()">🎵 Play Audio</button>
+
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    function playAudio() {
       const audio = document.getElementById('background-audio');
       audio.play().catch(error => {
         console.error("Autoplay prevented:", error);
       });
-    });
+    }
   </script>
 </body>
 </html>
