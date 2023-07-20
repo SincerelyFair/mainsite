@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fairs.ga</title>
+  <title>formerly fairs.ml/fairs.ga</title>
   <style>
     body {
       margin: 0;
@@ -34,8 +34,24 @@
   </style>
 </head>
 <body>
+  <audio id="background-audio" autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
   <div class="container">
     <div class="huge-text">Restoring backups soon</div>
     <div class="paragraphs">
-      <p>yet again, my 5th domain fairs.ml has been taken down due to the military being dunce and unaware about a mistake they've been doing for the past 10 years. more informations here: https://www.theregister.com/2023/07/18/us_military_mali_email_typos/</p>
-      <p>setting up this domain and servers soon (might as well switch registrars), contact t.me/f41rs if necessary
+      <p>yet again, my 5th domain fairs.ml has been taken down due to the military being dunce and unaware about a mistake they've been doing for the 10 years. more information here: https://www.theregister.com/2023/07/18/us_military_mali_email_typos/</p>
+      <p>setting up this domain and servers soon (might as well switch registrars), contact <a href="https://t.me/f41rs" target="_blank">t.me/f41rs</a> if necessary</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('background-audio');
+      audio.play().catch(error => {
+        console.error("Autoplay prevented:", error);
+      });
+    });
+  </script>
+</body>
+</html>
