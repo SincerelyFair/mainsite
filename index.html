@@ -1,80 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>formerly fairs.ml/fairs.ga</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-color: black;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    .huge-text {
-      font-size: 48px;
-      font-weight: bold;
-    }
-
-    .paragraphs {
-      max-width: 800px;
-      margin: 20px auto;
-      line-height: 1.6;
-    }
-
-    /* Style for the play button */
-    .play-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      font-size: 24px;
-      background-color: transparent;
-      color: white;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      text-decoration: underline;
-    }
-
-    /* Style for the clickable URL */
-    .url-link {
-      color: rgb(253, 228, 67);
-      text-decoration: underline;
-    }
-  </style>
+<meta charset=UTF-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="fairs.ga, fairs.ml, interoperable, nyctophile.cf, nyctophile">
+<meta name="title" content="deep digging your sensitive data">
+<meta name="description" content="keep yourself safe">
+<meta name="author" content="interoperable">
+<meta name="url" content="https://nyctophile.cf/">
+<meta name="image" content="https://nyctophile.cf/assets/404.png">
+<script src="scripts/title.js"></script>
+<title>nyctophile.cf</title>
+<script src="scripts/main.js"></script>
+<script src="https://kit.fontawesome.com/1324d91e83.js"></script>
+<link rel=“canonical” href=“https://nyctophile.cf/index.html/” />
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
-<body>
-  <audio id="background-audio" loop>
-    <source src="audio.mp3" type="audio/mpeg">
-  </audio>
-  <div class="container">
-    <div class="huge-text">Restoring backups soon</div>
-    <div class="paragraphs">
-      <p>yet again, my 5th domain fairs.ml has been taken down due to the military being dunce and unaware about a mistake they've been doing for the past 10 years. more information here: <a class="url-link" href="https://www.theregister.com/2023/07/18/us_military_mali_email_typos" target="_blank">https://www.theregister.com/2023/07/18/us_military_mali_email_typos</a></p>
-      <p>setting up this domain and servers soon (might as well switch registrars), contact <a href="https://t.me/f41rs" target="_blank">t.me/f41rs</a> if necessary</p>
-    </div>
-  </div>
+<center><button id="overlay-start" style="margin-top:250px;" onclick="if (!window.__cfRLUnblockHandlers) return false; overlay();" data-cf-modified-2c19e534336721fbbbbf1c6c-="">click to proceed</button></center>
+<div class="btn-container"></div>
+<div class=wrapper id=wrapper>
+<style> body{margin:0;padding:0;background-color:#000;overflow:hidden;font-family:"Brandon Light";color:#fff;user-select:none;opacity:.1;transition:opacity 2s;-webkit-transition:opacity 5s} a{color:#fff;text-decoration:none;padding:0} .center{position:absolute;text-align:center;top:50%;left:50%;transform:translate(-50%,-50%)} #border{position:absolute;width:100%;height:100%;box-sizing:border-box;pointer-events:none;z-index:-1} #borderTop,#borderBottom{position:absolute;width:0%;height:4px;background-color:purple} #borderRight,#borderLeft{position:absolute;width:3px;height:0%;background-color:purple} video{position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;z-index:-2;filter:blur(5px) brightness(30%);pointer-events:none} #test p{opacity:0} pre{-webkit-animation:fadein 2s;font-weight:bold;font-size:16px;user-select:none;color:purple;background:repeating-linear-gradient(120deg,#39f 0%,#db7093 40%,#39f 60%);background-size:60vw 60vw;-webkit-text-fill-color:transparent;-webkit-background-clip:text;animation:slide 5s linear infinite forwards}@keyframes slide { 0% { background-position-x: 0%; } 100% { background-position-x: 60vw; } } pre2{font-weight:bold;font-size:16px;user-select:none;color:purple;background:repeating-linear-gradient(120deg,purple 0%,aqua 40%,purple 60%);background-size:60vw 60vw;-webkit-text-fill-color:transparent;-webkit-background-clip:text;animation:slide2 5s linear infinite forwards}@keyframes slide2 { 0% { background-position-x: 0%; } 100% { background-position-x: 60vw; } } #widgetContainer{opacity:0;position:absolute;right:20px;top:20px;width:400px;height:38px;background: repeating-linear-gradient(120deg, purple 0%, aqua 40%, purple 60%);background-size:60vw 60vw;animation:slide 10s linear infinite forwards;transition:1s} #widget{position:absolute;width:394px;height:29px;margin:3px;background-color:purple;z-index:1;transition:2s} #widgetMain{position:absolute;display:inline-flex;justify-content:space-between;margin-top:3px;padding-right:10px;padding-left:10px;width:374px;height:29px;z-index:2;background-color:purple} #burgerMenu{cursor:pointer} #dropDownContent{display:none;opacity:0;transition:2s;width:100%;height:100%;position:absolute;margin-top:30px} #links{right:5px;width:100px;float:left;margin-top:-4px} #groups{float:right;margin-top:5px} #dropDownContent div a{opacity:0;transition:1s;line-height:18px} #dropDownContent div span{margin-left:10px;margin-right:10px} #groups a,#groups span{float:right} .hitCount{position:fixed;bottom:5px;right:5px;transition:3s;color:var(--color);font-size:24px;opacity:0;bottom:-3px} a.hitCounter.badge-done0{display:none!important} #bgvid{position:fixed;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);background-size:cover} .wrapper,.wrapper1{position:absolute;top:0;bottom:0;left:0;right:0;transition:.5s;margin:auto;visibility:hidden;text-align:center} .btn-container{min-width:100vw;display:flex;flex-direction:column;align-items:center;justify-content:center} #overlay-start{font-size:150%;background-color:#fff;color:#000;padding:20px} #overlay-start:hover{text-decoration:underline}</style>
+<script src="scripts/rocket-loader.min.js" data-cf-settings="2c19e534336721fbbbbf1c6c-|49"></script><body onload="document.body.style.opacity='1'">
+<div class="center">
+<pre>      
 
-  <!-- Add a button to play the audio on user interaction -->
-  <button class="play-button" onclick="playAudio()">🎵 Play Audio</button>
 
-  <script>
-    function playAudio() {
-      const audio = document.getElementById('background-audio');
-      audio.play().catch(error => {
-        console.error("Autoplay prevented:", error);
-      });
-    }
-  </script>
-</body>
-</html>
+
+                   _              _     _ _             __ 
+  _ __  _   _  ___| |_ ___  _ __ | |__ (_) | ___   ___ / _|
+ | '_ \| | | |/ __| __/ _ \| '_ \| '_ \| | |/ _ \ / __| |_ 
+ | | | | |_| | (__| || (_) | |_) | | | | | |  __/| (__|  _|
+ |_| |_|\__, |\___|\__\___/| .__/|_| |_|_|_|\___(_)___|_|  
+        |___/              |_|                             
+ 
+<center>
+<a href="https://open.spotify.com/user/ahoq0giaueqlvruw6b3xfs4iw" target=”_blank”><i class="fab fa-spotify fa-2x"></i></a> <a href="https://t.me/f41rs" target=”_blank”><i class="fab fa-telegram fa-2x"></i></a> <a href="https://discord.gg/SvvshJKQ" target=”_blank”><i class="fab fa-discord fa-2x"></i></a> <a href="https://instagram.com/sentimentalized" target=”_blank”><i class="fab fa-instagram fa-2x"></i></a> <a href="https://nyctophile.cf/pgp" target=”_blank”><i class="fa-regular fa-envelope fa-2x"></i></a>
+
+</pre>
+<div>
+<audio id="audio" muted="" paused="" style="display:none;" controls="" loop="">
+<source src="assets/audio.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<video loop="" muted="muted" id="bgvid">
+<source src="assets/audio.mp4" type="video/mp4">
+</video>
+<script src="scripts/core.js"></script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/disable_inspect.js"></script>
+</div>
+</div>
+</div>
+</script><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="2c19e534336721fbbbbf1c6c-|49" defer=""></script></html>
