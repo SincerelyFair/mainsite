@@ -9,9 +9,10 @@
 <script src="https://kit.fontawesome.com/1324d91e83.js" crossorigin="anonymous"></script>
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
-<center><button id="overlay-start" style="margin-top:250px;" onclick="overlay();">CLICK ME TO ENTER</button></center>
-<div class="btn-container"></div>
-<div class="wrapper" id="wrapper">
+<body onload="document.body.style.opacity='1'">
+  <center><button id="overlay-start" style="margin-top: 250px;" onclick="overlay();">CLICK ME TO ENTER</button></center>
+  <div class="btn-container"></div>
+  <div class="wrapper" id="wrapper">
 <style>
          body {
          margin: 0;
@@ -251,10 +252,10 @@
 
 </style>
 <body onload="document.body.style.opacity='1'">
-  <video id="bgvid" autoplay loop muted playsinline>
+  <video id="bgvid" loop muted playsinline>
     <source src="video.webm" type="video/mp4">
     Your browser does not support the video element.
-  </video>
+</video>
 <div class="center">
 <pre>      
 

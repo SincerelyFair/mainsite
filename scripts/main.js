@@ -1,4 +1,4 @@
-function overlay(){
+function overlay() {
     var btn = document.getElementById("overlay-start");
     var wrapper = document.getElementById("wrapper");
     btn.style.opacity = 0;
@@ -11,6 +11,8 @@ function mediaPlay() {
     var video = document.getElementById("bgvid");
     audio.muted = !audio.muted;
     audio.volume = 1;
-    audio.play()
-    video.play()
+    audio.play();
+    video.currentTime = 0;
+    video.play();
 }
+
